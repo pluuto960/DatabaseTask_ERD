@@ -6,10 +6,13 @@ namespace DatabaseTask.Core.Domain
     public class Supplier
     {
         [Key]
-        public Guid SupplierID { get; set; }
+        public int SupplierID { get; set; }
         public string SupplierName { get; set; }
         public string SupplierAddress { get; set; }
         public int SupplierPhone {  get; set; }
+
+        public ICollection<Item> Items { get; set; }
+        public ICollection<Shipnote> Shipnotes { get; set; }
 
     }
 }

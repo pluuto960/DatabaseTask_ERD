@@ -9,10 +9,9 @@ namespace DatabaseTask.Core.Domain
 {
     public class ItemGroup
     {
-        [Key]
-        public Guid ItemGroupID { get; set; }
-        public string Name {  get; set; }
+        public int ItemGroupID { get; set; }
+        public string Name { get; set; }
 
-
+        public ICollection<Item> Items { get; set; }
     }
 }
