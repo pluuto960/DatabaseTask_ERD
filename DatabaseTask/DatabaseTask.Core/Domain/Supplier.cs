@@ -11,8 +11,6 @@ namespace DatabaseTask.Core.Domain
         public string SupplierAddress { get; set; }
         public int SupplierPhone {  get; set; }
 
-        public ICollection<Item> Items { get; set; }
-        public ICollection<Shipnote> Shipnotes { get; set; }
-
+   
     }
 }
